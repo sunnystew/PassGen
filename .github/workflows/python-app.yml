@@ -1,2 +1,13 @@
 - name: PyInstaller Action
   uses: Martin005/pyinstaller-action@v1.2.0
+
+jobs:
+  pyinstaller-build:
+    runs-on: <windows-latest>
+    steps:
+      - name: Create Executable
+        uses: sayyid5416/pyinstaller@v1
+        with:
+          python_ver: '3.8'
+          upload_exe_with_name: 'PassGen.Win.x64'
+          options: --onefile, --name "PassGen", --windowed, 
