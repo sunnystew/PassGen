@@ -2,8 +2,8 @@
   # You may pin to the exact commit or the version.
   # uses: Martin005/pyinstaller-action@dcfd75f8789130c10c0a34c3dee563e3f6906ea4
   uses: Martin005/pyinstaller-action@v1.2.0
-  with: '/main.py'
-    spec: # default is 
+  with: 
+    spec: '/main.py'
     # path of your requirements.txt file
     requirements: # optional, default is 
     # Options to set for pyinstaller command Ex: options: '--onedir, -F'       (seperated by comma and space)
